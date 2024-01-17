@@ -37,7 +37,7 @@ html {
     position: relative;
 }
 
- 
+
 .main-hero-div h1 {
     color: #FFF;
     font-feature-settings: 'liga' off;
@@ -48,6 +48,10 @@ html {
     line-height: 72px;
     /* 120% */
     letter-spacing: -1.5px;
+}
+
+.main-hero-div span {
+    color: #AA8BFC;
 }
 
 .main-hero-div h3 {

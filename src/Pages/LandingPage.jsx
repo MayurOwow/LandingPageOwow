@@ -7,6 +7,7 @@ import SocialInstagram from '../assets/SocialInstagramIcon.png'
 import SocialFacebook from '../assets/SocialFacebookIcon.png'
 import SocialTwitter from '../assets/SocialTwitterIcon.png'
 import SocialLinkdin from '../assets/SocialLinkdinIcon.png'
+import FlagIndia from '../assets/flagindia.png'
 
 const LandingPage = () => {
 
@@ -24,7 +25,7 @@ const LandingPage = () => {
           <div className='row'>
             <div className='col-sm-6 col-12'>
               <div className='tag'>Future of work is here, where are you?</div>
-              <h1>Hire vetted talent in <br />India</h1>
+              <h1>Hire vetted talent in <br /><span>India </span><img src={FlagIndia}/></h1>
               <h3>And save 70% on salaries</h3>
               <div className='d-flex justify-content-between mt-5 mb-4'>
                 <div className='d-flex justify-content-between tag' style={{ gap: "12px" }}>
