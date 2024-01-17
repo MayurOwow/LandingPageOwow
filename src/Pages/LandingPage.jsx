@@ -65,10 +65,10 @@ const LandingPage = () => {
               <p className='text-white'>© 2024 OWOW talents inc. All rights reserved</p>
             </div>
             <div className='d-flex text-white' style={{ gap: "16px" }}>
-              <img src={SocialInstagram} className='img-fluid' />
-              <img src={SocialFacebook} className='img-fluid' />
-              <img src={SocialTwitter} className='img-fluid' />
-              <img src={SocialLinkdin} className='img-fluid' />
+              <div><img src={SocialInstagram} className='img-fluid' /></div>
+              <div><img src={SocialFacebook} className='img-fluid' /></div>
+              <div><img src={SocialTwitter} className='img-fluid' /></div>
+              <div><img src={SocialLinkdin} className='img-fluid' /></div>
             </div>
           </div>
         </div>
