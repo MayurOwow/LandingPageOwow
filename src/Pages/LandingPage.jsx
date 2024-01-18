@@ -16,7 +16,7 @@ const LandingPage = () => {
   const countries = ['India', 'USA', 'Globally'];
   const flags = [FlagIndia, FlagUsa, FlagGlobe];
   const [key, setKey] = useState(0); // Added key state
-  const savingsTexts = ['And save 70% on salaries', 'Upto 6 weeks on hiring', 'Upto 75% on salaries'];
+  const savingsTexts = ['Save upto 70% on salaries', 'Save upto 6 weeks on hiring time', 'Save upto 75% on salaries'];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
