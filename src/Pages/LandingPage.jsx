@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Logo from '../assets/owowLogo.png'
 import PayrollImg from '../assets/Group47458.png'
 import PayrollImg2 from '../assets/Group47459.png'
- import LottieAnimation from '../Components/ LottieAnimation';
+import LottieAnimation from '../Components/ LottieAnimation';
 import SocialInstagram from '../assets/SocialInstagramIcon.png'
 import SocialFacebook from '../assets/SocialFacebookIcon.png'
 import SocialTwitter from '../assets/SocialTwitterIcon.png'
@@ -39,15 +39,12 @@ const LandingPage = () => {
         <div class="container main-hero-div mt-5">
           <div className='row'>
             <div className='col-sm-7 col-12 order-1'>
-              {/* <button className="cst-button"> <span class="button__label">Future of work is here, where are you?</span> </button> */}
               <button className="cst-button">Future of work is here, where are you?</button>
-              <h1>
-                Hire vetted talent in <br />
-                <span key={key} className='typewriter'>
-                  {countries[index]} <img src={flags[index]} alt={`Flag for ${countries[index]}`} />
-                </span>
-              </h1>
+              <h1>Hire vetted talent in <br /> <span key={key} className='typewriter'> {countries[index]} <img src={flags[index]} alt={`Flag for ${countries[index]}`} /></span></h1>
               <h3 key={key}>{savingsTexts[index]}</h3>
+              <div className='display-not-for-desktop'>
+                <LottieAnimation />
+              </div>
               <div className='d-flex flex-wrap mobile-gap mt-5 mb-4'>
                 <div className='d-flex justify-content-between cst-button' style={{ gap: "12px" }}>
                   <div>
@@ -71,21 +68,21 @@ const LandingPage = () => {
 
               </div>
               <div className='center-button-on-mobile'>
-              <button className='btn join-waitlist-button2'>Join the waitlist</button>
+                <button className='btn join-waitlist-button2'>Join the waitlist</button>
               </div>
 
             </div>
-            <div className='col-sm-5 col-12 order-2'>
+            <div className='col-sm-5 col-12 order-2 dislay-desktop'>
               <LottieAnimation />
             </div>
           </div>
         </div>
       </section>
-      <br />
-      <br />
+      <div class="dislay-desktop"> <br /> <br /><br /> <br /></div>
+
       <section className='footer-cst'>
         <div class="container">
-          <div className='d-flex pt-5 pb-5 footer-main-flex'>
+          <div className='d-flex pb-3 footer-main-flex'>
             <div className='d-flex ' style={{ gap: "16px" }}>
               <p>Terms and Conditions</p>
               <p>Privacy Policy</p>

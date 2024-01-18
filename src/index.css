@@ -17,7 +17,8 @@ html {
     box-shadow: 0px 0px 25.4px 10px rgba(255, 255, 255, 0.18);
 
 }
-.join-waitlist-button2{
+
+.join-waitlist-button2 {
     color: #371B89 !important;
     text-align: center;
     font-family: Work Sans;
@@ -29,6 +30,7 @@ html {
     background: #FFF !important;
     box-shadow: 0px 0px 25.4px 10px rgba(255, 255, 255, 0.18);
 }
+
 .cst-button {
     background: rgba(255, 255, 255, 0.30);
     ;
@@ -118,6 +120,10 @@ html {
 
 .mobile-gap {
     gap: 16px;
+}
+
+.display-not-for-desktop {
+    display: none;
 }
 
 .typewriter {
@@ -233,11 +239,19 @@ html {
     .join-waitlist-button {
         font-size: 16px;
     }
+
     .join-waitlist-button2 {
         font-size: 16px;
     }
 
     .mobile-gap {
         gap: 0px;
+    }
+
+    .display-not-for-desktop {
+        display: block;
+        /* width: 72%; */
+        text-align: center;
+        margin-top: 20px;
     }
 }
