@@ -134,6 +134,10 @@ html {
     animation: typing 2s steps(20, end);
 }
 
+.payroll-buttons-manage {
+    gap: 12px;
+}
+
 @keyframes typing {
     from {
         width: 0;
@@ -255,6 +259,7 @@ html {
         text-align: center;
         margin-top: 20px;
     }
+
     .main-hero-div h1 {
         color: #FFF;
         font-feature-settings: 'liga' off;
@@ -266,4 +271,8 @@ html {
         letter-spacing: -0.75px;
     }
 
+    .payroll-buttons-manage {
+        gap: 12px;
+        width: 100%;
+    }
 }

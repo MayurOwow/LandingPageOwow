@@ -46,7 +46,7 @@ const LandingPage = () => {
                 <LottieAnimation />
               </div>
               <div className='d-flex flex-wrap mobile-gap mt-5 mb-4'>
-                <div className='d-flex justify-content-between cst-button' style={{ gap: "12px" }}>
+                <div className='d-flex payroll-buttons-manage cst-button' >
                   <div>
                     <img src={PayrollImg} className='img-fluid' />
                   </div>
@@ -55,7 +55,7 @@ const LandingPage = () => {
                     <div className='cst-para2'>Manage Global Payroll with 1 click</div>
                   </div>
                 </div>
-                <div className='d-flex justify-content-between cst-button' style={{ gap: "12px" }}>
+                <div className='d-flex payroll-buttons-manage cst-button' >
 
                   <div>
                     <img src={PayrollImg2} className='img-fluid' />
