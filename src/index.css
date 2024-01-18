@@ -37,8 +37,13 @@ html {
 
 }
 
+.cst-para1 {
+    font-weight: 600;
+}
+
 .cst-para2 {
     font-size: 14px;
+    font-weight: 500;
 }
 
 .button__label {
@@ -69,6 +74,7 @@ html {
     color: #FFF;
     font-family: Work Sans;
     font-size: 40px;
+    font-weight: 600;
 }
 
 .payroll-and-compilance div {
@@ -93,6 +99,27 @@ html {
     line-height: 20px;
 }
 
+.footer-main-flex {
+    justify-content: space-between;
+}
+
+.typewriter {
+    overflow: hidden;
+    /* border-right: 0.15em solid #AA8BFC; */
+    white-space: nowrap;
+    display: inline-block;
+    animation: typing 2s steps(20, end);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
 @media (min-width: 1600px) {
 
     .container,
@@ -108,7 +135,14 @@ html {
 @media (max-width: 1399.98px) {
 
     .main-hero-div h1 {
-        font-size: 50px;
+        color: #FFF;
+        font-feature-settings: 'liga' off;
+        font-family: Work Sans;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.75px;
     }
 
     .main-hero-div h3 {
@@ -117,6 +151,15 @@ html {
 
     .footer-cst p {
         font-size: 14px;
+    }
+
+    .cst-para1 {
+        font-weight: 600;
+    }
+
+    .cst-para2 {
+        font-size: 13px;
+        font-weight: 500;
     }
 }
 
@@ -135,22 +178,32 @@ html {
         font-style: normal;
         font-weight: 700;
     }
-}
 
-.typewriter {
-    overflow: hidden;
-    /* border-right: 0.15em solid #AA8BFC; */
-    white-space: nowrap;
-    display: inline-block;
-    animation: typing 2s steps(20, end);
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0;
+    .footer-main-flex {
+        flex-direction: column;
+        align-items: center;
     }
-    to {
-      width: 100%;
+
+    .dislay-desktop {
+        display: none;
     }
-  }
-  
+
+    .main-hero-div h3 {
+        color: #F0F0F0;
+        font-feature-settings: 'liga' off;
+        font-family: Work Sans;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .center-button-on-mobile {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .join-waitlist-button {
+        font-size: 16px;
+    }
+}

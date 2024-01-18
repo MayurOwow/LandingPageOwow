@@ -12,9 +12,10 @@ import FlagGlobe from '../assets/flagGlobe.png'
 
 const LandingPage = () => {
   const [index, setIndex] = useState(0);
-  const countries = ['India', 'USA', 'around the Globe'];
+  const countries = ['India', 'USA', 'Globally'];
   const flags = [FlagIndia, FlagUsa, FlagGlobe];
   const [key, setKey] = useState(0); // Added key state
+  const savingsTexts = ['And save 70% on salaries', 'Upto 6 weeks on hiring', 'Upto 75% on salaries'];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -26,33 +27,33 @@ const LandingPage = () => {
   }, []);
   return (
     <>
-      <section>
-        <div class="container p-4">
+      <section className='pt-4 pb-4 px-2'>
+        <div class="container">
           <div className='d-flex justify-content-between'>
             <a href='#'><img src={Logo} className='img-fluid' /></a>
             <button className='btn join-waitlist-button'>Join the waitlist</button>
           </div>
         </div>
-        <br />
+        <div class="dislay-desktop"> <br /> </div>
         <div class="container main-hero-div mt-5">
           <div className='row'>
-            <div className='col-sm-7 col-12'>
+            <div className='col-sm-7 col-12 order-1'>
               {/* <button className="cst-button"> <span class="button__label">Future of work is here, where are you?</span> </button> */}
               <button className="cst-button">Future of work is here, where are you?</button>
-               <h1>
+              <h1>
                 Hire vetted talent in <br />
                 <span key={key} className='typewriter'>
                   {countries[index]} <img src={flags[index]} alt={`Flag for ${countries[index]}`} />
                 </span>
               </h1>
-              <h3>And save 70% on salaries</h3>
-              <div className='d-flex mt-5 mb-4' style={{ gap: "16px" }}>
+              <h3 key={key}>{savingsTexts[index]}</h3>
+              <div className='d-flex flex-wrap mt-5 mb-4' style={{ gap: "16px" }}>
                 <div className='d-flex justify-content-between cst-button' style={{ gap: "12px" }}>
                   <div>
                     <img src={PayrollImg} className='img-fluid' />
                   </div>
                   <div className='d-flex flex-column payroll-and-compilance' >
-                    <div>Payroll and compliance</div>
+                    <div className='cst-para1'>Payroll and compliance</div>
                     <div className='cst-para2'>Manage Global Payroll with 1 click</div>
                   </div>
                 </div>
@@ -62,16 +63,18 @@ const LandingPage = () => {
                     <img src={PayrollImg} className='img-fluid' />
                   </div>
                   <div className='d-flex flex-column payroll-and-compilance'>
-                    <div>Payroll and compliance</div>
+                    <div className='cst-para1'>Payroll and compliance</div>
                     <div className='cst-para2'>Manage Global Payroll with 1 click</div>
                   </div>
                 </div>
 
               </div>
+              <div className='center-button-on-mobile'>
               <button className='btn join-waitlist-button'>Join the waitlist</button>
+              </div>
 
             </div>
-            <div className='col-sm-5 col-12'>
+            <div className='col-sm-5 col-12 order-2'>
               <LottieAnimation />
             </div>
           </div>
@@ -81,7 +84,7 @@ const LandingPage = () => {
       <br />
       <section className='footer-cst'>
         <div class="container">
-          <div className='d-flex justify-content-between pt-5 pb-5'>
+          <div className='d-flex pt-5 pb-5 footer-main-flex'>
             <div className='d-flex ' style={{ gap: "16px" }}>
               <p>Terms and Conditions</p>
               <p>Privacy Policy</p>
