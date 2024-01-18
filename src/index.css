@@ -9,7 +9,7 @@ html {
     text-align: center;
     font-family: Work Sans;
     font-weight: 700;
-    /* line-height: normal; */
+    line-height: normal;
     min-width: 192px;
     padding: 12px;
     border-radius: 66px;
@@ -17,25 +17,36 @@ html {
     box-shadow: 0px 0px 25.4px 10px rgba(255, 255, 255, 0.18);
 }
 
-.tag {
-    position: relative;
-    display: inline-block;
+.cst-button {
+    background: rgba(255, 255, 255, 0.30);
+    ;
     padding: 6px 12px;
     margin-bottom: 20px;
-    color: #FFF;
+    background-image: linear-gradient(90deg, #0a0225, #0a0225),
+        linear-gradient(90deg, hsl(289, 65%, 64%), hsl(226, 78%, 67%));
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    border-radius: 62px;
+    border: 2px solid transparent;
     font-family: Work Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, #8F72E2, #F9C575, #4394E1);
-    border-image-slice: 1;
-    border-image-width: 2px;
-    border-radius: 62px;
+    color: white;
 
-    position: relative;
 }
+
+.cst-para2 {
+    font-size: 14px;
+}
+
+.button__label {
+    background-image: linear-gradient(to right, #8F72E2, #F9C575, #4394E1);
+    -webkit-background-clip: text;
+    font-weight: 400;
+}
+
 
 
 .main-hero-div h1 {
@@ -57,12 +68,30 @@ html {
 .main-hero-div h3 {
     color: #FFF;
     font-family: Work Sans;
+    font-size: 40px;
 }
 
 .payroll-and-compilance div {
     color: #FFF;
 }
 
+.footer-cst {
+    background: url(assets/footerBottamImage.png);
+    z-index: 300;
+    bottom: 0px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.footer-cst p {
+    color: #D1D5DB;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
 
 @media (min-width: 1600px) {
 
@@ -76,7 +105,20 @@ html {
     }
 }
 
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+
+    .main-hero-div h1 {
+        font-size: 50px;
+    }
+
+    .main-hero-div h3 {
+        font-size: 28px;
+    }
+
+    .footer-cst p {
+        font-size: 14px;
+    }
+}
 
 @media (max-width: 1199.98px) {}
 

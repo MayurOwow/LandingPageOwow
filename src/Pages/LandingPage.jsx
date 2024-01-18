@@ -17,58 +17,74 @@ const LandingPage = () => {
       <section>
         <div class="container p-4">
           <div className='d-flex justify-content-between'>
-            <img src={Logo} className='img-fluid' />
+            <a href='#'><img src={Logo} className='img-fluid' /></a>
             <button className='btn join-waitlist-button'>Join the waitlist</button>
           </div>
         </div>
+        <br />
         <div class="container main-hero-div mt-5">
           <div className='row'>
-            <div className='col-sm-6 col-12'>
-              <div className='tag'>Future of work is here, where are you?</div>
-              <h1>Hire vetted talent in <br /><span>India </span><img src={FlagIndia}/></h1>
+            <div className='col-sm-7 col-12'>
+              {/* <button className="cst-button"> <span class="button__label">Future of work is here, where are you?</span> </button> */}
+              <button className="cst-button">Future of work is here, where are you?</button>
+              <h1>Hire vetted talent in <br /><span>India </span><img src={FlagIndia} /></h1>
               <h3>And save 70% on salaries</h3>
-              <div className='d-flex justify-content-between mt-5 mb-4'>
-                <div className='d-flex justify-content-between tag' style={{ gap: "12px" }}>
+              <div className='d-flex mt-5 mb-4' style={{ gap: "16px" }}>
+                <div className='d-flex justify-content-between cst-button' style={{ gap: "12px" }}>
                   <div>
                     <img src={PayrollImg} className='img-fluid' />
                   </div>
                   <div className='d-flex flex-column payroll-and-compilance' >
                     <div>Payroll and compliance</div>
-                    <div>Manage Global Payroll with 1 click</div>
+                    <div className='cst-para2'>Manage Global Payroll with 1 click</div>
                   </div>
                 </div>
-                <div className='d-flex justify-content-between tag' style={{ gap: "12px" }}>
+                <div className='d-flex justify-content-between cst-button' style={{ gap: "12px" }}>
+
                   <div>
                     <img src={PayrollImg} className='img-fluid' />
                   </div>
                   <div className='d-flex flex-column payroll-and-compilance'>
                     <div>Payroll and compliance</div>
-                    <div>Manage Global Payroll with 1 click</div>
+                    <div className='cst-para2'>Manage Global Payroll with 1 click</div>
                   </div>
                 </div>
+
               </div>
               <button className='btn join-waitlist-button'>Join the waitlist</button>
 
             </div>
-            <div className='col-sm-6 col-12'>
+            <div className='col-sm-5 col-12'>
               <LottieAnimation />
             </div>
           </div>
         </div>
+      </section>
+      <br />
+      <br />
+      <section className='footer-cst'>
         <div class="container">
-          <div className='d-flex justify-content-between'>
-            <div className='d-flex text-white' style={{ gap: "16px" }}>
+          <div className='d-flex justify-content-between pt-5 pb-5'>
+            <div className='d-flex ' style={{ gap: "16px" }}>
               <p>Terms and Conditions</p>
               <p>Privacy Policy</p>
             </div>
             <div>
-              <p className='text-white'>© 2024 OWOW talents inc. All rights reserved</p>
+              <p >© 2024 OWOW talents inc. All rights reserved</p>
             </div>
-            <div className='d-flex text-white' style={{ gap: "16px" }}>
-              <div><img src={SocialInstagram} className='img-fluid' /></div>
-              <div><img src={SocialFacebook} className='img-fluid' /></div>
-              <div><img src={SocialTwitter} className='img-fluid' /></div>
-              <div><img src={SocialLinkdin} className='img-fluid' /></div>
+            <div className='d-flex ' style={{ gap: "16px" }}>
+              <a href='https://www.linkedin.com/company/saletancy/' target='_blank'>
+                <img src={SocialLinkdin} className='img-fluid' />
+              </a>
+              <a href='https://x.com/saletancy?s=20' target='_blank'>
+                <img src={SocialTwitter} className='img-fluid' />
+              </a>
+              <a href='https://www.facebook.com/saletancy' target='_blank'>
+                <img src={SocialFacebook} className='img-fluid' />
+              </a>
+              <a href='https://www.instagram.com/saletancy/' target='_blank'>
+                <img src={SocialInstagram} class Name='img-fluid' />
+              </a>
             </div>
           </div>
         </div>
