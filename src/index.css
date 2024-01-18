@@ -162,7 +162,7 @@ html {
         color: #FFF;
         font-feature-settings: 'liga' off;
         font-family: Work Sans;
-        font-size: 30px;
+        font-size: 50px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -246,6 +246,7 @@ html {
 
     .mobile-gap {
         gap: 0px;
+        justify-content: center;
     }
 
     .display-not-for-desktop {
@@ -254,4 +255,15 @@ html {
         text-align: center;
         margin-top: 20px;
     }
+    .main-hero-div h1 {
+        color: #FFF;
+        font-feature-settings: 'liga' off;
+        font-family: Work Sans;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.75px;
+    }
+
 }
