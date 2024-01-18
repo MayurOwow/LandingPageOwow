@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Logo from '../assets/owowLogo.png'
 import PayrollImg from '../assets/Group47458.png'
-import LottieAnimation from '../Components/ LottieAnimation';
+import PayrollImg2 from '../assets/Group47459.png'
+ import LottieAnimation from '../Components/ LottieAnimation';
 import SocialInstagram from '../assets/SocialInstagramIcon.png'
 import SocialFacebook from '../assets/SocialFacebookIcon.png'
 import SocialTwitter from '../assets/SocialTwitterIcon.png'
@@ -47,7 +48,7 @@ const LandingPage = () => {
                 </span>
               </h1>
               <h3 key={key}>{savingsTexts[index]}</h3>
-              <div className='d-flex flex-wrap mt-5 mb-4' style={{ gap: "16px" }}>
+              <div className='d-flex flex-wrap mobile-gap mt-5 mb-4'>
                 <div className='d-flex justify-content-between cst-button' style={{ gap: "12px" }}>
                   <div>
                     <img src={PayrollImg} className='img-fluid' />
@@ -60,17 +61,17 @@ const LandingPage = () => {
                 <div className='d-flex justify-content-between cst-button' style={{ gap: "12px" }}>
 
                   <div>
-                    <img src={PayrollImg} className='img-fluid' />
+                    <img src={PayrollImg2} className='img-fluid' />
                   </div>
                   <div className='d-flex flex-column payroll-and-compilance'>
-                    <div className='cst-para1'>Payroll and compliance</div>
-                    <div className='cst-para2'>Manage Global Payroll with 1 click</div>
+                    <div className='cst-para1'>Local procurement</div>
+                    <div className='cst-para2'>Manage Local procurement with 1 click</div>
                   </div>
                 </div>
 
               </div>
               <div className='center-button-on-mobile'>
-              <button className='btn join-waitlist-button'>Join the waitlist</button>
+              <button className='btn join-waitlist-button2'>Join the waitlist</button>
               </div>
 
             </div>
