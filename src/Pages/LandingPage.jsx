@@ -2,16 +2,28 @@ import React, { useEffect, useState } from 'react'
 import Logo from '../assets/owowLogo.png'
 import PayrollImg from '../assets/Group47458.png'
 import LottieAnimation from '../Components/ LottieAnimation';
-
 import SocialInstagram from '../assets/SocialInstagramIcon.png'
 import SocialFacebook from '../assets/SocialFacebookIcon.png'
 import SocialTwitter from '../assets/SocialTwitterIcon.png'
 import SocialLinkdin from '../assets/SocialLinkdinIcon.png'
 import FlagIndia from '../assets/flagindia.png'
+import FlagUsa from '../assets/flagUsa.png'
+import FlagGlobe from '../assets/flagGlobe.png'
 
 const LandingPage = () => {
+  const [index, setIndex] = useState(0);
+  const countries = ['India', 'USA', 'around the Globe'];
+  const flags = [FlagIndia, FlagUsa, FlagGlobe];
+  const [key, setKey] = useState(0); // Added key state
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % countries.length);
+      setKey((prevKey) => prevKey + 1); // Increment the key to restart the animation
+    }, 5000); // Change country and flag every 5000 milliseconds (5 seconds)
 
+    return () => clearInterval(intervalId); // Clear interval on component unmount
+  }, []);
   return (
     <>
       <section>
@@ -27,7 +39,12 @@ const LandingPage = () => {
             <div className='col-sm-7 col-12'>
               {/* <button className="cst-button"> <span class="button__label">Future of work is here, where are you?</span> </button> */}
               <button className="cst-button">Future of work is here, where are you?</button>
-              <h1>Hire vetted talent in <br /><span>India </span><img src={FlagIndia} /></h1>
+               <h1>
+                Hire vetted talent in <br />
+                <span key={key} className='typewriter'>
+                  {countries[index]} <img src={flags[index]} alt={`Flag for ${countries[index]}`} />
+                </span>
+              </h1>
               <h3>And save 70% on salaries</h3>
               <div className='d-flex mt-5 mb-4' style={{ gap: "16px" }}>
                 <div className='d-flex justify-content-between cst-button' style={{ gap: "12px" }}>
