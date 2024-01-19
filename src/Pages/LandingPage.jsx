@@ -10,6 +10,7 @@ import SocialLinkdin from '../assets/SocialLinkdinIcon.png'
 import FlagIndia from '../assets/flagindia.png'
 import FlagUsa from '../assets/flagUsa.png'
 import FlagGlobe from '../assets/flagGlobe.png'
+import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
   const [index, setIndex] = useState(0);
@@ -18,6 +19,7 @@ const LandingPage = () => {
   const [key, setKey] = useState(0); // Added key state
   const savingsTexts = ['Save upto 70% on salaries', 'Save upto 6 weeks on hiring time', 'Save upto 75% on salaries'];
 
+  const navigate = useNavigate()
   useEffect(() => {
     const intervalId = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % countries.length);
@@ -26,13 +28,18 @@ const LandingPage = () => {
 
     return () => clearInterval(intervalId); // Clear interval on component unmount
   }, []);
+
+  const handleHomeLogo = (e) => {
+    e.preventDefault();
+    navigate("/")
+  }
   return (
     <>
       <section className='pt-4 pb-4 px-2'>
         <div class="container">
           <div className='d-flex justify-content-between'>
-            <a href='#'><img src={Logo} className='img-fluid' /></a>
-            <button className='btn join-waitlist-button'>Join the waitlist</button>
+            <a href='#' onClick={handleHomeLogo}><img src={Logo} className='img-fluid' /></a>
+            <a href='https://hch8q16d1wm.typeform.com/to/JGmrCIac' target='_blank' className='btn join-waitlist-button'>Join the waitlist</a>
           </div>
         </div>
         <div class="dislay-desktop"> <br /> </div>
@@ -68,7 +75,7 @@ const LandingPage = () => {
 
               </div>
               <div className='center-button-on-mobile'>
-                <button className='btn join-waitlist-button2'>Join the waitlist</button>
+                <a href='https://hch8q16d1wm.typeform.com/to/JGmrCIac' target='_blank' className='btn join-waitlist-button2'>Join the waitlist</a>
               </div>
 
             </div>
