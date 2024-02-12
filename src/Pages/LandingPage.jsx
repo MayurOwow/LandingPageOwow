@@ -98,16 +98,16 @@ const LandingPage = () => {
               <p >© 2024 OWOW talents inc. All rights reserved</p>
             </div>
             <div className='d-flex ' style={{ gap: "16px" }}>
-              <a href='https://www.linkedin.com/company/saletancy/' target='_blank'>
+              <a href='https://www.linkedin.com/company/owowtalents' target='_blank'>
                 <img src={SocialLinkdin} className='img-fluid' />
               </a>
-              <a href='https://x.com/saletancy?s=20' target='_blank'>
+              <a href='https://twitter.com/OwowTalents' target='_blank'>
                 <img src={SocialTwitter} className='img-fluid' />
               </a>
-              <a href='https://www.facebook.com/saletancy' target='_blank'>
+              <a href='https://www.facebook.com/Owowtalents' target='_blank'>
                 <img src={SocialFacebook} className='img-fluid' />
               </a>
-              <a href='https://www.instagram.com/saletancy/' target='_blank'>
+              <a href='https://www.instagram.com/owowtalents' target='_blank'>
                 <img src={SocialInstagram} class Name='img-fluid' />
               </a>
             </div>
