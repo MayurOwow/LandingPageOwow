@@ -17,7 +17,7 @@ const LandingPage = () => {
   const countries = ['India', 'USA', 'Globally'];
   const flags = [FlagIndia, FlagUsa, FlagGlobe];
   const [key, setKey] = useState(0); // Added key state
-  const savingsTexts = ['Save upto 70% on salaries', 'Save upto 6 weeks on hiring time', 'Save upto 75% on salaries'];
+  const savingsTexts = ['Save up to 70% on salaries', 'Save up to 6 weeks on hiring time', 'Save up to 75% on salaries'];
 
   const navigate = useNavigate()
   useEffect(() => {
